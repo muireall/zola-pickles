@@ -25,17 +25,17 @@ h6
 
 h1 {
   font-size: 3.2rem;
-  font-family: SourceSansPro;
+  font-family: $SourceSansPro;
 }
 
 h2 {
   font-size: 2.8rem;
-  font-family: SourceSansPro;
+  font-family: $SourceSansPro;
 }
 
 h3 {
   font-size: 2.4rem;
-  font-family: SourceSansPro;
+  font-family: $SourceSansPro;
   font-variant: small-caps;
   padding: 0px;
   margin: 0px;
@@ -43,7 +43,7 @@ h3 {
 
 h4 {
   font-size: 2rem;
-  font-family: SourceSansPro;
+  font-family: $SourceSansPro;
   font-weight: semibold;
   margin: 0px;
   padding: 0px;
@@ -51,7 +51,7 @@ h4 {
 
 h5 {
   font-size: 1.8rem;
-  font-family: SourceSansPro;
+  font-family: $SourceSansPro;
   font-variant: small-caps;
   margin: 0px;
   padding: 0px;
@@ -59,7 +59,7 @@ h5 {
 
 h6 {
   font-size: 1.6rem;
-  font-family: SourceSansPro;
+  font-family: $SourceSansPro;
   font-weight: semibold;
   margin: 0px;
   padding: 0px;
