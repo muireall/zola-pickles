@@ -112,7 +112,6 @@ dd {
 pre {
   display: block;
   padding: 12px;
-  border-radius: 3px;
   background-color: #f0f0ff;
   font-size: 1.2rem;
   word-wrap: break-word;
@@ -129,7 +128,7 @@ code {
 pre code {
   display: block;
   padding: 12px;
-  border-radius: 3px;
+  box-shadow: 0 0 0 12px #fffcfa;
   line-height: 1.3;
   font-size: 1.4rem;
   background-color:none;
