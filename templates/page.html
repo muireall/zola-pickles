@@ -8,19 +8,15 @@
 {%- endblock title %}
 
 {% block content %}
-<article class="p-article">
+<article class="p-article h-entry">
     <header>
-        <h1>{{ page.title | markdown | striptags }}</h1>
+        <h1 class="p-name">{{ page.title | markdown | striptags }}</h1>
         <div>
             <div class="c-time">
-
-                <time datetime="{{ page.date | date(format="%F") | safe }}">
+                <time class="dt-published" datetime="{{ page.date | date(format="%F") | safe }}">
                     {{ page.date | date(format="%F") }}
                 </time>
-                {% if page.extra.author -%}
-                  by {{ page.extra.author}}
-                {%- endif %}
-                {{ " - " }}({{ page.reading_time }} min read)
+                {{ " — " }}({{ page.reading_time }} min read)
             </div>
         </div>
     </header>
@@ -49,9 +45,10 @@
         </div>
     </div>
     {%- endif %}
-    <section id="js-article" class="p-article__body">
+    <section id="js-article" class="p-article__body e-content">
         {{ page.content | safe }}
     </section>
+    <address class="p-author h-card" href=" {{ config.base_url }} ">{{ config.extra.signoff }} </address>
     <footer>
         <nav class="c-pagination p-pagination">
             <div class="c-pagination__ctrl">
